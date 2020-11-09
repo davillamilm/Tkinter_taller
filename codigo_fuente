@@ -1,0 +1,111 @@
+import tkinter as tk
+from tkinter import ttk
+
+
+def init_window():
+    window = tk.Tk()
+    window.title('Miprimera aplicacion')
+    window.geometry('400x300')
+
+    tab_control = ttk.Notebook(window)
+    tab1 = ttk.Frame(tab_control)
+    tab2 = ttk.Frame(tab_control)
+
+    tab_control.add(tab1, text='Simple')
+    tab_control.add(tab2, text='Volver')
+
+    label = tk.Label(tab1, text='Calculadora', font=('Arial bold', 15))
+    label.grid(column=0, row=0, pady=10)
+
+    entrada1 = tk.Entry(tab1, width=10)
+    entrada2 = tk.Entry(tab1, width=10)
+
+    entrada1.grid(column = 1, row = 1, pady=5)
+    entrada2.grid(column = 1, row = 2, pady=5)
+
+    label_entrada1 = tk.Label(tab1, text = 'Ingrese primer numero: ', font=('Arial bold', 10))
+    label_entrada1.grid(column = 0, row = 1, pady=5)
+
+    label_entrada2 = tk.Label(tab1, text = 'Ingrese segundo numero: ', font=('Arial bold', 10))
+    label_entrada2.grid(column = 0, row = 2, pady=5)
+
+    label_operador = tk.Label(tab1, text = 'Escoja un operador', font=('Arial bold', 10))
+    label_operador.grid(column = 0, row = 3, pady=5)
+
+    combo_operadores = ttk.Combobox(tab1)
+    combo_operadores['value'] = ['+', '-', '*', '/', 'pow', 'raiz']
+    combo_operadores.grid(column=1, row=3, pady=5)
+
+    label_resultado = tk.Label(tab1, text='Resultado: ', font=('Arial bold', 15))
+    label_resultado.grid(column = 0, row = 5, pady=5)
+
+    boton1 = tk.Button(tab1,
+                      command = lambda: click_calcular(
+                          label_resultado,
+                          entrada1.get(),
+                          entrada2.get(),
+                          combo_operadores.get()),
+                      text='Calcular',
+                      bg="purple",
+                      fg="white")
+    boton1.grid(column = 1, row = 4, pady=5)
+
+    boton2 = tk.Button(tab1,
+                       text='SALIR',
+                       fg="red",
+                       command=window.destroy)
+
+    boton2.grid(column=1, row=6, pady = 5)
+
+    label = tk.Label(tab2, text='¡Gracias!', font=('Arial bold', 15))
+    label.grid(column=0, row=0, pady=10)
+
+
+    label_entrada1 = tk.Label(tab2, text='Por utilizar esta calculadora vuelva pronto ', font=('Arial bold', 10))
+    label_entrada1.grid(column=0, row=1, pady=5)
+
+
+
+    boton2 = tk.Button(tab2,
+                       text='SALIR',
+                       fg="red",
+                       command=window.destroy)
+    boton2.grid(column=0, row=2, pady=5)
+
+    tab_control.pack(expand=1, fill='both')
+
+
+
+    window.mainloop()
+
+def calculadora(num1, num2, operador):
+
+    if operador == '+':
+        resultado = num1 + num2
+    elif operador == '-':
+        resultado = num1 - num2
+    elif operador == '*':
+        resultado = num1 * num2
+    elif operador == '/':
+        resultado = round(num1 / num2, 2)
+    elif operador == 'pow':
+        resultado = num1 ** num2
+    else:
+        num1 = 1/num1
+        resultado = num2 ** num1
+
+    return resultado
+
+def click_calcular(label, num1, num2, operador):
+
+    valor1 = float(num1)
+    valor2 = float(num2)
+
+    res = calculadora(valor1, valor2, operador)
+
+    label.configure(text = 'Resultado: ' + str(res))
+
+def main():
+    init_window()
+
+main()
