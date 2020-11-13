@@ -1,6 +1,17 @@
-# Tkinter_taller
+# Tkinter_Calculador
 
-![logo](/imágenes/hoja.png)
-¡Cordial Saludo! aqui esta mi calculadora: ![Imagen](https://i1.wp.com/esferacreativa.com/wp-content/uploads/2020/05/imagenes-para-redes-sociales-medidas-MadridNYC.png?fit=1024%2C512&ssl=1)
+Programacio de computadores, Grupo 12, David Felipe Villamil Moscoso
+
+Informacion basica: para el funcionamiento del programa solo se necesito la
+libreria de Tkinter, la cual no requiere instalacion
+
+Widgets incorporados:
+
+1. Cambio de color del fondo de los nombres principales
+2. Una pestaña mas, en total serian dos una de calculadora y otra de agradecimiento
+3. Un boton de "SALIR" el cual cierra la aplicacion
+
+
+
 
 
