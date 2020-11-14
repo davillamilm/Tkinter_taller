@@ -9,7 +9,7 @@ Widgets incorporados:
 
 1. Cambio de color del fondo de los nombres principales
 2. Una pestaña mas, en total serian dos una de calculadora y otra de agradecimiento
-3. Un boton de "SALIR" el cual cierra la aplicacion
+3. Un boton "SALIR" el cual cierra la aplicacion
 
 ![imagen 1](https://lh3.googleusercontent.com/hpjwaJN4W5axKyvNUTI0VhQh9F9fujLe2NZPxrhRjyXQqA1dagDT1eNOzJE8x5FZLqQ5In84bUK4YomzikHZX7shzky8-aw8uIMyLJ4W1MzwfWFIMs1cYZAuNaA3GwmW2c8HeMCPg8U-OSCUcNRantVh1gSWK7rpPj_sixAMhPDNtoe_xvsUWRQdMjRkeIioKygntHMQ8iEYnP9frLWCUKoV9zMKgjJ2VLpDzqm9JWHQaUUJ2Mkc7lv8VZxWjudmaF_7ewql5x6pQkFzqe-bSoTLJp2VoZcTjoYPgvR0IApC13ZgN80eMH0UKYg41xHGQwsvOzWLSGVjFTHcqCkNhII85ir0GxHu3X_9oTU0jUGlV2Iu2MkIwkDkDqBPm3DPAzcnvk2TOldQBrUQT0W3wgnmjMRNBRrppMxA06ypc8Qz4aGLqO3cqbJc0luKYc0dvYeDuc6gTQpfVd40DwuV2x_Q-2j2POw38tfL7lK5FMgg6osfm6z4f_oJQwE--j9PTr9P7XbOfyDSBLmwEcYJc9q_x82TXHrKRCpcYUpaacGjpot5TbqqJbga3tfmgJ_eLwyiIcVdRwyVHCdwgDUUx0Q5u-TeCnR86uMSRu_FwBg5dPpvYwP64XHP71PbwZpsz7DnL8A8NAJ-N2tvHFtR16H0ajFXejSmNXbzgvDk5GovBtLGfmQgyI2Z5itd=w800-h471-no?authuser=0)
 
