@@ -4,17 +4,17 @@ from tkinter import ttk
 
 def init_window():
     window = tk.Tk()
-    window.title('Miprimera aplicacion')
+    window.title('Mi primera aplicacion')
     window.geometry('400x300')
 
     tab_control = ttk.Notebook(window)
     tab1 = ttk.Frame(tab_control)
     tab2 = ttk.Frame(tab_control)
 
-    tab_control.add(tab1, text='Simple')
-    tab_control.add(tab2, text='Volver')
+    tab_control.add(tab1, text='Calculadora')
+    tab_control.add(tab2, text='SALIR')
 
-    label = tk.Label(tab1, text='Calculadora', font=('Arial bold', 15))
+    label = tk.Label(tab1, text='Calculadora', font=('Arial bold', 15), bg ="blue")
     label.grid(column=0, row=0, pady=10)
 
     entrada1 = tk.Entry(tab1, width=10)
@@ -57,7 +57,7 @@ def init_window():
 
     boton2.grid(column=1, row=6, pady = 5)
 
-    label = tk.Label(tab2, text='¡Gracias!', font=('Arial bold', 15))
+    label = tk.Label(tab2, text='¡Gracias!', font=('Arial bold', 15), bg="yellow")
     label.grid(column=0, row=0, pady=10)
 
 
@@ -108,4 +108,3 @@ def click_calcular(label, num1, num2, operador):
 def main():
     init_window()
 
-main()
